@@ -1,0 +1,29 @@
+.mediaViewInfo {
+	--web-view-name: Web 1920 – 1;
+	--web-view-id: Web_1920__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Web_1920__1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#all{
+	height: 100%;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+#pageinfo{
+    position: absolute;
+    top: 80px;
+	padding-left: 100px;
+    padding-right: 100px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}

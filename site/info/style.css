@@ -1,0 +1,19 @@
+#welcome{
+    position: absolute;
+    text-align: center;
+}
+#welcome span{
+    font-size: 40px;
+    font-family: monospace;
+}
+#welcome p{
+    font-size: 19px;
+    padding: 30px;
+}
+#serversta{
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+}

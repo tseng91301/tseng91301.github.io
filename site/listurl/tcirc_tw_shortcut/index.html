@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6QDEP0H0ZJ"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-6QDEP0H0ZJ');
+	</script>
+        <head>
+			
+            <meta charset="utf-8"/>
+	        <title>標題</title>
+	        <link href="/module/style.css" rel="stylesheet" >
+			<meta name="google-site-verification" content="wckxJU1daLfK2yDVIT6UCxz-rm2UXiye6-nG_5onam0" />
+        </head>
+        <body>
+			
+            <div class="wrap">
+                <div class="header" id="top">
+                    <h1>標題</h1>
+                </div>
+                <div class="content">
+                    <div class="left">
+						
+                    </div>
+                    <div class="center">
+						
+					</div>
+                </div>
+                
+                <div class="clearfix"></div>
+                <div class="footer" id="footer">
+				</div>
+            </div>
+			<script src="/module/jquery.min.js"></script>
+			<script>
+				$(function(){
+					/*公共部分
+					 * 導航欄
+					 * footer CopyRight
+					 */
+					$(".left").load("/module/content.php");
+					$(".footer").load("/module/footer.html");
+					
+				});
+			</script>
+        </body>
+</html>

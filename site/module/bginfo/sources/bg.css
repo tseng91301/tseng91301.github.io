@@ -1,0 +1,293 @@
+#ctpan{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    padding: 0px;
+    background-color: black;
+}
+#optionico{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 60px;
+}
+#optall{
+    z-index: 0;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 60px;
+}
+#optall a{
+    color: white;
+    text-decoration: none;
+}
+#optlay1{
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    width: 270px;
+    height: auto;
+    display: none;
+    
+}
+#opthome{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    background-color: #6C6C6C;
+    height: 70px;
+}
+#optcontents{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 70px;
+    height: 70px;
+}
+#contentslay1{
+    position: absolute;
+    top: 70px;
+    left: 270px;
+    width: 270px;
+    height: auto;
+    display: none;
+}
+#contentsdata{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 0px;
+    height: 70px;
+}
+#contentstools{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 70px;
+    height: 70px;
+}
+#toolslay1{
+    position: absolute;
+    top: 70px;
+    left: 270px;
+    width: 270px;
+    height: auto;
+    display: none;
+}
+#tcfshlibbook{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 0px;
+    height: 100px;
+}
+#numsort{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 100px;
+    height: 70px;
+}
+#rannumgen{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 170px;
+    height: 70px;
+}
+#scrtosub{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 240px;
+    height: 70px;
+}
+#optabout{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 140px;
+    height: 70px;
+}
+#optcontact{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 210px;
+    height: 70px;
+}
+#contactall{
+    z-index: 0;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    background-color: #6C6C6C;
+    display: none;
+}
+
+#contactin{
+    width: 780px;
+    height: 480px;
+    background-color: white;
+}
+#contactemail{
+    position: absolute;
+    top: 62px;
+    width: 500px;
+    left: 88px;
+    height: auto;
+}
+#contactsoc{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 212px;
+}
+.socialaccounts{
+    width: 166px;
+    height: 300px;
+    padding-left: 52px;
+    padding-right: 20px;
+    display: inline-table;
+}
+#contactin p{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-family: monospace;
+
+}
+#contactin a{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-family: monospace;
+
+}
+#contactin img{
+    width: 166px;
+}
+#userarea{
+    z-index: 0;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    background-color: #6C6C6C;
+    display: none;
+}
+#userareain{
+    width: 780px;
+    height: 480px;
+    background-color: white;
+}
+#userarealoginform{
+    width: 630px;
+    height: 400px;
+    left: 50%;
+    margin-left: -340px;
+    top: 50%;
+    position: absolute;
+    margin-top: -200px;
+}
+#closebuttondisactive,#closebuttonactive{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 40px;
+}
+#closebuttondisactive{
+    display: block;
+}
+#closebuttonactive{
+    display: none;
+}
+#optclose{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 280px;
+    height: 70px;
+}
+#optresetonlinesta{
+    width: 100%;
+    position: absolute;
+    background-color: #969696;
+    top: 350px;
+    height: 70px;
+}
+.imginopts{
+    width: 40px;
+    position: absolute;
+    top: -1px;
+}
+.opttext{
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    top: 14px;
+    text-align: center;
+    font-size: 25px;
+}
+#sitenamein1{
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    color: white;
+    margin-left: -92px;
+    font-family: system-ui;
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+}
+#userico{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 60px;
+}
+#userall{
+    z-index: 0;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 60px;
+}
+#userall a{
+    color: white;
+    text-decoration: none;
+}
+#userlay1{
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    right: 0px;
+    width: 270px;
+    height: auto;
+    display: none;
+    
+}
+#optdo1{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    background-color: #6C6C6C;
+    height: 70px;
+}
+#optdo2{
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    background-color: #6C6C6C;
+    height: 70px;
+}
