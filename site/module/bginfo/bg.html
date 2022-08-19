@@ -58,7 +58,23 @@
             <div id="userarea">
                 <div id="userareain">
                     <div id="userarealoginform">
-                        
+                        <form>
+                            <div id="userarealoginformloginssid">
+                                <p>登入帳號：</p><input type="text" id="loginssid">
+                            </div>
+                            <div id="userarealoginformloginpass">
+                                <p>登入密碼：</p><input type="password" id="loginpass">
+                            </div>
+                            
+                            <button onclick="submitlogin()">登入</button>
+                        </form>
+                        <div id="userarealoginformotheropt">
+                            <p>沒有帳號嗎？</p>
+                            <a href="#">註冊新帳號</a>
+                        </div>
+                    </div>
+                    <div id="userareaerror">
+                        <p>抱歉，暫時無法取得資訊... :q</p>
                     </div>
                     <img id="closebuttondisactive" src="/site/module/bginfo/images/closebuttondisactive.png" onclick="showuser()">
                     <img id="closebuttonactive" src="/site/module/bginfo/images/closebuttonactive.png">

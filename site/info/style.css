@@ -1,6 +1,10 @@
 #welcome{
     position: absolute;
     text-align: center;
+    width: 800px;
+    left: 50%;
+    top: 60px;
+    margin-left: -400px;
 }
 #welcome span{
     font-size: 40px;

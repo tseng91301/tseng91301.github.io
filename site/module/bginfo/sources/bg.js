@@ -99,6 +99,8 @@ function clickcontact(){
         clickcontacttmp1=0;
     }
 }
+
+//userblock
 var showusertmp1=0;
 function showuser(){
     closeall();
@@ -121,6 +123,28 @@ function showuser(){
         
         showusertmp1=0;
     }
+}
+whethershowloginform();
+function whethershowloginform(){
+    try{
+        getCookie('onlinesta');
+    }catch{
+        console.log('waiting[getCookie(\'onlinesta\')...');
+    }finally{
+        if(getCookie('onlinesta')=='1'){
+            document.getElementById('userarealoginform').style.display='block';
+            document.getElementById('userareaerror').style.display='none';
+        }else{
+            document.getElementById('userarealoginform').style.display='none';
+            document.getElementById('userareaerror').style.display='block';
+            setTimeout(whethershowloginform,200);
+        }
+        
+    }
+    
+}
+function submitlogin(){
+    
 }
 
 function closeall(){

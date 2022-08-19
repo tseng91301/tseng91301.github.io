@@ -192,6 +192,7 @@
     background-color: white;
 }
 #userarealoginform{
+    display: none;
     width: 630px;
     height: 400px;
     left: 50%;
@@ -199,6 +200,64 @@
     top: 50%;
     position: absolute;
     margin-top: -200px;
+}
+#userarealoginformloginssid{
+    position: absolute;
+    border-radius: 20px;
+    top: 40px;
+    left: 113px;
+}
+#userarealoginformloginpass{
+    position: absolute;
+    border-radius: 20px;
+    top: 150px;
+    left: 113px;
+}
+#userarealoginformloginssid input,#userarealoginformloginpass input{
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    background-color: #d4ebff;
+    font-size: 20px;
+    border-radius: 16px;
+}
+#userarealoginformloginssid p,#userarealoginformloginpass p{
+    font-size: 20px;
+}
+#userarealoginform button{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+    left: 313px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+#userarealoginformotheropt{
+    font-size: 20px;
+    color: black;
+    width: 190px;
+    height: 60px;
+    position: absolute;
+    top: 270px;
+    left: 110px;
+}
+#userarealoginformotheropt a{
+    text-decoration-line: none;
+    color: rgb(22, 117, 0);
+}
+#userareaerror{
+    display: none;
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -63px;
+    text-align: center;
+    font-size: 33px;
+
 }
 #closebuttondisactive,#closebuttonactive{
     position: absolute;
