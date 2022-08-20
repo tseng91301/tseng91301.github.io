@@ -144,7 +144,20 @@ function whethershowloginform(){
     
 }
 function submitlogin(){
-    
+    var loginssid=document.getElementById('loginssid').value;
+    var loginpass=document.getElementById('loginpass').value;
+    var back=postform({ssid:loginssid,pass:loginpass},'/api/login.php');
+    console.log(back.responseText);
+    if(back.responseText.indexOf("[postsendE2]")!=-1){
+        resetonlinesta();
+        alert('伺服器錯誤，請嘗試重新整理頁面(session ID丟失)');  
+    }
+    if(back.responseText.indexOf("[loginE2]")){
+        alert('Exception: 帳號密碼有誤，請再試一次');
+    }
+    if(back.responseText.indexOf("[registermailresendS1]")){
+        alert('以重新傳送Email');
+    }
 }
 
 function closeall(){
@@ -185,9 +198,31 @@ function checkserver(){
         onlinesta=1;
         console.log(onlinesta);
         console.log("server online!");
-        setCookie('onlinesta','1',1);
+        setCookie('onlinesta','1',30);
+        getremotesessionid();
+        
         //setTimeout(checkserver,1000);
     }
+}
+function getremotesessionid(){
+    cookiereply=$.ajax({
+        url:"https://blacktechserver.ddnsking.com/api/getsession.php",
+        method:"get",
+        async:false
+    });
+    try{
+        console.log(cookiereply.responseText);
+    }catch{
+        console.log("retrying[getremotesessionid()]");
+        setTimeout(getremotesessionid,200);
+    }finally{
+        if(cookiereply.responseText!=undefined){
+            setCookie('PHPSESSID',cookiereply.responseText,30);
+        }else{
+            setTimeout(getremotesessionid,200);
+        }
+    }
+    
 }
 
 //https://www.w3schools.com/js/js_cookies.asp
@@ -208,14 +243,33 @@ function getCookie(cname) {
 }
 
 //https://www.w3schools.com/js/js_cookies.asp
-function setCookie(cname, cvalue, exmins) {
+function setCookie(cname, cvalue, exmins,domain) {
     const d = new Date();
     d.setTime(d.getTime() + (exmins*60*1000));
     let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    var cookietmp=cname + "=" + cvalue + ";" + expires + ";path=/; SameSite=None; secure";
+    if(domain!=undefined){
+        cookietmp+="domain="+domain+';';
+    }
+    document.cookie = cookietmp;
 }
 
 function resetonlinesta(){
     setCookie('onlinesta','');
+    setCookie('PHPSESSID','');
     location.reload();
+}
+
+/* Post data to serverside*/
+function postform(postcontent,serverpath){
+    postcontent['sendto']=serverpath;
+    postcontent['PHPSESSID']=getCookie('PHPSESSID');
+    console.log(postcontent)
+    aaa=$.ajax({
+        url:"https://blacktechserver.ddnsking.com/api/postsend.php",
+        method:"post",
+        async:false,
+        data:postcontent
+    });
+    return(aaa);
 }
