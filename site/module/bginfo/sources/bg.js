@@ -6,6 +6,15 @@ function adjustsizeinbg(){
 }
 
 //adjust
+//reloading
+var reloaded=getCookie('reloaded');
+if(reloaded=='1'){
+    setCookie('reloaded','0',100);
+}else{
+    setCookie('reloaded','1',100);
+    location.reload();
+}
+//reloading
 
 
 
@@ -41,6 +50,10 @@ function clickbutt(idname,linkto){
     var defcolor=document.getElementById(idname).style.backgroundColor;
     document.getElementById(idname).style.backgroundColor=clickedcolor;
     if(linkto!=undefined){
+        setTimeout(() => {
+            document.getElementById(idname).style.backgroundColor=defcolor;
+        }, 200);
+        closeall();
         location=linkto;
     }else{
         setTimeout(() => {
@@ -247,7 +260,7 @@ function setCookie(cname, cvalue, exmins,domain) {
     const d = new Date();
     d.setTime(d.getTime() + (exmins*60*1000));
     let expires = "expires="+ d.toUTCString();
-    var cookietmp=cname + "=" + cvalue + ";" + expires + ";path=/; SameSite=None; secure";
+    var cookietmp=cname + "=" + cvalue + ";" + expires + ";path=/; secure";
     if(domain!=undefined){
         cookietmp+="domain="+domain+';';
     }

@@ -6,12 +6,14 @@ function getregisterconfirmpass(){
         setTimeout(getregisterconfirmpass,200);
     }else{
         registerconfirmpass=document.getElementById('registerconfirmpass');
+        registerpass=document.getElementById('registerpass');
         return;
     }
 }
 a1();
 function a1(){
     try{
+        registerpass.addEventListener('input',checkconfirmpassvalue);
         registerconfirmpass.addEventListener('input',checkconfirmpassvalue);
     }catch{
         console.log('retrying[a1]')
@@ -43,10 +45,19 @@ function completeregisterform(){
     registerssid=document.getElementById('registerssid').value;
     registerpass=document.getElementById('registerpass').value;
     if(samepass==1){
-        document.getElementById('registerformsubmit').innerHTML="處理中，請稍後...";
-        var registerback=postform({ssid:registerssid,pass:registerpass,mail:registermail},'/api/register/registeremailcheck.php');
-        console.log(registerback);
-        eval(registerback.responseText);
+        console.log("eee");
+        if(document.getElementById('registerformsubmit').innerHTML!="處理中，請稍後..."){
+            console.log('ignore');
+            document.getElementById('registerformsubmit').innerHTML="處理中，請稍後...";
+            completeregisterform();
+        }else{
+            var registerback=postform({ssid:registerssid,pass:registerpass,mail:registermail},'/api/register/registeremailcheck.php');
+            console.log(registerback);
+            eval(registerback.responseText);
+        }
+        
+        
+        
     }
 }
 
