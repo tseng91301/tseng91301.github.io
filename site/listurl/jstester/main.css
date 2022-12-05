@@ -1,0 +1,20 @@
+#codehere{
+    width: 1000px;
+    height: 600px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    padding: 25px;
+}
+.butt{
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    border: 3px #74ff74;
+}
+#excutebut{
+    background: aquamarine; 
+}
+#clearbut{
+    background-color: red;
+}
