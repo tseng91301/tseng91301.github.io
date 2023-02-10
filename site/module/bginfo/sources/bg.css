@@ -20,9 +20,33 @@
     left: 30px;
     width: 60px;
 }
+#optall td{
+    padding: 15px;
+    white-space: nowrap;
+}
+#optall p{
+    text-align: center;
+    top: 50%;
+    margin-top: -5px;
+}
+#optall-1_table{
+    background-color: #969696;
+    position: absolute;
+    top: 0px;
+    width: auto;
+    height: auto;
+    display: none;
+}
 #optall a{
     color: white;
     text-decoration: none;
+}
+#optall table{
+    background-color: #969696;
+    min-width: 180px;
+}
+#optall table td{
+    max-height: 60px;
 }
 #optlay1{
     position: absolute;
@@ -33,34 +57,10 @@
     display: none;
     
 }
-#opthome{
+#optall-1_table-2_table{
     position: absolute;
-    width: 100%;
-    top: 0px;
-    background-color: #6C6C6C;
-    height: 70px;
-}
-#optcontents{
-    width: 100%;
-    position: absolute;
-    background-color: #969696;
-    top: 70px;
-    height: 70px;
-}
-#contentslay1{
-    position: absolute;
-    top: 70px;
-    left: 270px;
-    width: 270px;
     height: auto;
     display: none;
-}
-#contentsdata{
-    width: 100%;
-    position: absolute;
-    background-color: #969696;
-    top: 0px;
-    height: 70px;
 }
 #contentstools{
     width: 100%;
@@ -69,11 +69,8 @@
     top: 70px;
     height: 70px;
 }
-#toolslay1{
+#optall-1_table-2_table-2_table{
     position: absolute;
-    top: 70px;
-    left: 270px;
-    width: 270px;
     height: auto;
     display: none;
 }

@@ -1,0 +1,12 @@
+#ctpan{
+    width: 100%;
+    height: 80px;
+    padding: 0px;
+    background-color: black;
+}
+#optionico{
+    position: relative;
+    top: 10px;
+    left: 30px;
+    width: 60px;
+}

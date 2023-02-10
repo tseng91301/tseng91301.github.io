@@ -11,50 +11,72 @@
         <div id="ctpan">
             <a href="#" onclick="showopt()"><img id="optionico" src="/site/module/bginfo/images/option2.png"></a>
             <div id="optall">
-                
-                <div id="optlay1">
-                    <div id="opthome" onclick="clickbutt('opthome','/site/')">
-                        <a href="#"><p id="opthomeinfo" class="opttext" >首頁</p></a>
-                    </div>
-                    <div id="optcontents" onclick="clickbutt('optcontents');clickcontents();">
-                        <a href="#"><p id="optcontentsinfo" class="opttext">目錄</p></a>
-                    </div>
-                    <div id="contentslay1">
-                        <div id="contentsdata" onclick="clickbutt('contentsdata');">
-                            <a href="#"><p id="contentsdatainfo" class="opttext">資料</p></a>
-                        </div>
-                        <div id="contentstools" onclick="clickbutt('contentstools');clicktools();">
-                            <a href="#"><p id="contentstoolsinfo" class="opttext">小工具</p></a>
-                        </div>
-                        <div id="toolslay1">
-                            <div id="tcfshlibbook" onclick="clickbutt('tcfshlibbook','/site/listurl/tcfsh_lib_book');">
-                                <a href="#"><p id="tcfshlibbookinfo" class="opttext">一個厲害的一中閱覽室預約系統</p></a>
-                            </div>
-                            <div id="numsort" onclick="clickbutt('numsort','/site/listurl/numbersort');">
-                                <a href="#"><p id="numsortinfo" class="opttext">數字排序工具</p></a>
-                            </div>
-                            <div id="rannumgen" onclick="clickbutt('rannumgen','/site/listurl/randomnumgenerator');">
-                                <a href="#"><p id="rannumgeninfo" class="opttext">隨機數字產生器</p></a>
-                            </div>
-                            <div id="scrtosub" onclick="clickbutt('scrtosub','/site/listurl/scripttosubtitle');">
-                                <a href="#"><p id="scrtosubinfo" class="opttext">劇本轉字幕工具</p></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="optabout" onclick="clickbutt('optabout');">
-                        <a href="#"><p id="optaboutinfo" class="opttext">關於</p></a>
-                    </div>
-                    <div id="optcontact" onclick="clickbutt('optcontact');clickcontact();">
-                        <a href="#"><p id="optcontactinfo" class="opttext">聯絡方式</p></a>
-                    </div>
-                    
-                    <div id="optclose" onclick="clickbutt('optclose');clickbackarrow()">
-                        <a href="#"><p id="optcloseinfo" class="opttext">收合&emsp;<img src="/site/module/bginfo/images/back2.png" class="imginopts"></p></a>
-                    </div>
-                    <div id="optresetonlinesta" onclick="clickbutt('optresetonlinesta');resetonlinesta();">
-                        <a href="#"><p id="optresetonlinestainfo" class="opttext">重新整理上線狀態</p></a>
-                    </div>
-                </div> 
+                <table id="optall-1_table">
+                    <tr>
+                        <td id="optall-1_table-1" onclick="clickbutt('optall-1_table-1','/site/')">
+                            <a href="#"><p id="optall-1_table-1_info" class="opttext" >首頁</p></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="optall-1_table-2" onclick="clickbutt('optall-1_table-2');clickcontents()">
+                            <a href="#"><p id="optall-1_table-2_info" class="opttext" >目錄</p></a>
+                        </td>
+                        <td>
+                            <table id="optall-1_table-2_table">
+                                <tr>
+                                    <td id="optall-1_table-2_table-1" onclick="clickbutt('optall-1_table-2_table-1');">
+                                        <a href="#"><p id="optall-1_table-2_table-1_info" class="opttext" >資料</p></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="optall-1_table-2_table-2" onclick="clickbutt('optall-1_table-2_table-2');clicktools();">
+                                        <a href="#"><p id="optall-1_table-2_table-2_info" class="opttext" >小工具</p></a>
+                                    </td>
+                                    <td>
+                                        <table id="optall-1_table-2_table-2_table">
+                                            <tr>
+                                                <td id="optall-1_table-2_table-2_table-1" onclick="clickbutt('optall-1_table-2_table-2_table-1','/site/listurl/tcfsh_lib_book');">
+                                                    <a href="#"><p id="optall-1_table-2_table-2_table-1_info" class="opttext">一個厲害的一中閱覽室預約系統</p></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="optall-1_table-2_table-2_table-2" onclick="clickbutt('optall-1_table-2_table-2_table-2','/site/listurl/numbersort');">
+                                                    <a href="#"><p id="optall-1_table-2_table-2_table-2_info" class="opttext">數字排序工具</p></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="optall-1_table-2_table-2_table-3" onclick="clickbutt('optall-1_table-2_table-2_table-3','/site/listurl/randomnumgenerator');">
+                                                    <a href="#"><p id="optall-1_table-2_table-2_table-3_info" class="opttext">隨機數字產生器</p></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="optall-1_table-2_table-2_table-4" onclick="clickbutt('optall-1_table-2_table-2_table-4','/site/listurl/scripttosubtitle');">
+                                                    <a href="#"><p id="optall-1_table-2_table-2_table-4_info" class="opttext">劇本轉字幕工具</p></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="optall-1_table-3" onclick="clickbutt('optall-1_table-3')">
+                            <a href="#"><p id="optall-1_table-3_info" class="opttext" >關於</p></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="optall-1_table-4" onclick="clickbutt('optall-1_table-4');clickcontact();">
+                            <a href="#"><p id="optall-1_table-4_info" class="opttext" >聯絡方式</p></a>
+                        </td>
+                    </tr>
+                        
+                        <td id="optall-1_table-5" onclick="clickbutt('optall-1_table-5');clickbackarrow()">
+                            <a href="#"><p id="optall-1_table-5_info" class="opttext" >收合&emsp;<img src="/site/module/bginfo/images/back2.png" class="imginopts"></p></a>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <span id="sitenamein1">Black.tech</span>
             <a href="#" onclick="showuser()"><img id="userico" src="/site/module/bginfo/images/user2.png"></a>
