@@ -1,6 +1,11 @@
 #seats_arrange{
     
 }
+#pageinfo input{
+    border: 2px;
+    border-style: double;
+    padding: 5px;
+}
 #seats_arrange td,th{
     border: 4px;
     border-style: double;
