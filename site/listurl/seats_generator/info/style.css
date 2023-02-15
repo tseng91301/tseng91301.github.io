@@ -1,0 +1,37 @@
+#seats_arrange{
+    
+}
+#seats_arrange td,th{
+    border: 4px;
+    border-style: double;
+    border-color: black;
+}
+#seats_arrange td{
+    width: 60px;
+    height: 40px;
+}
+#seats_arrange th{
+    height: 35px;
+    text-align: center;
+}
+.small_tag{
+    position: relative;
+    top: -10px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    border: 2px;
+    border-style: double;
+    border-color: black;
+}
+.small_tag p{
+    font-size: 5px;
+    text-align: center;
+    margin-top: -0.3px;
+}
+#confirm_seat_butt{
+    display: none;
+}
+#number_check_area{
+    display: none;
+}

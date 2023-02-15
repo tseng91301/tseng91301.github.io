@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="info/style.css" rel="stylesheet">
+    <title>座位選擇器</title>
+</head>
+<body>
+    <h1>座位選擇器--Normal</h1>
+    <ul>
+        <li>請輸入座位排數、列數：<br/>
+            <p>總共有<input id="row_number" type="number" required>排(直向)、<input id="col_number" type="number" required>列(橫向)&emsp;<button id="row_col_confirm" onclick="confirm_seatnum()">確認</button></p>
+            
+        </li>
+        <li>確認位置分配：<br/>
+            點擊座位來變更是否排入座號<br/>
+            綠色：排入座號&emsp;紅色：不排入座號<br/>
+            <p id="number_of_seats"></p>
+            <table>
+                <tbody id="seats_arrange">
+                    <tr>
+                        <th colspan="4" id="black_board">黑板</th>
+                    </tr>
+                </tbody>
+                
+            </table><br/>
+            <button id="confirm_seat_butt" onclick="confirm_seat()">確認座位分布</button>
+        </li>
+        <li id="number_check_area">確認排序座號：
+            <p>1 ~ <input type="number" required id="end_number"> 號&emsp;<button id="confirm_end_number_check" onclick="confirm_end_number()">確認</button></p>
+            <p>選擇不排入之座號：</p>
+            <div id="not_in_list">
+                
+            </div>
+            
+        </li>
+    </ul>
+</body>
+<script src="info/main.js"></script>
+</html>
