@@ -146,7 +146,7 @@ function showuser(){
         showusertmp1=0;
     }
 }
-whethershowloginform();
+//whethershowloginform();
 function whethershowloginform(){
     try{
         getCookie('onlinesta');
@@ -199,7 +199,7 @@ function closeall(){
 
 /*check server online or not */
 if(getCookie('onlinesta')==''){
-    checkserver();
+    //checkserver();
 }
 
 function checkserver(){
