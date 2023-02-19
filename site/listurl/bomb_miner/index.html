@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="info/style.css" rel="stylesheet">
+        <script src="/site/module/mainstyleadjust.js"></script>
+        <title>bomb_miner</title>
+        <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="/site/module/mainstyle.css"/>
+    </head>
+    <body>
+        <div id="all">
+            <div class="bg" >
+                    
+            </div>
+            <div id="pageinfo">
+                <div id="game_all">
+                    <h1>Bomb Miner</h1>
+                    <h3>按著鍵盤上的S鍵點擊可放置旗標</h3>
+                    <p>輸入遊戲區塊邊長：<input class="bomb_miner_inputs" id="game_width" type="number">格</p>
+                    <p>輸入地雷數：<input class="bomb_miner_inputs" id="bomb_amount" type="number">個</p>
+                    <button class="bomb_miner_buttons" id="generate_game_button" onclick="generate_game()" type="submit">開始遊戲</button><br/>
+                    <hr/>
+                    <button class="bomb_miner_buttons" id="change_mode_button" onclick="changegamemode()" id="gamemode">挖掘模式</button>
+                    <table id="game_decoration">
+                        <tbody id="gamesec">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <script src="info/main.js"></script>
+        <script src="info/gamesetup.js"></script>
+        <script src="info/gameplay.js"></script>
+        <script src="/site/module/jquery.min.js"></script>
+        <script>
+            $(function(){
+                /*公共部分
+                 * 導航欄
+                 * footer CopyRight
+                 */
+                $(".bg").load("/site/module/bginfo/bg.html");
+                
+            });
+        </script>
+        
+    </body>
+</html>

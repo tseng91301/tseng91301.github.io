@@ -1,0 +1,62 @@
+#game_decoration td{
+    background-color: rgb(200 230 255);
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    /*padding: 10px;*/
+    font-size: 25px;
+}
+#game_decoration p{
+    display: none;
+    margin: 0px;
+    padding: 7px;
+}
+.chunk_shield{
+    position: inherit;
+    width: 30px;
+    height: 45px;
+    background-color: rgb(159, 159, 159);
+    color: white;
+}
+.bomb_miner_inputs{
+    width: 60px;
+    padding: 10px;
+    border: 2px;
+    border-style: inset;
+    border-radius: 15px;
+}
+#game_width{
+    background-color: #e1ffdf;
+}
+#bomb_amount{
+    background-color: #ffdda8;
+}
+.bomb_miner_buttons{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border: 4px;
+    border-radius: 20px;
+}
+#generate_game_button{
+    border-style: dashed;
+    border-color: blueviolet;
+    background-color: #c07cff;
+}
+#change_mode_button{
+    background-color: black;
+    color: white;
+    font-family: inherit;
+}
+#gameall hr{
+    border: 4px;
+    border-style: dotted;
+    border-color: #a2a2a2;
+}
+#game_all{
+    font-family: system-ui;
+    background-color: #e2e2e2;
+    border: 5px;
+    border-style: groove;
+    padding: 20px;
+}
