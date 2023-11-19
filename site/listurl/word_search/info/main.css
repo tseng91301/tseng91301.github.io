@@ -12,6 +12,7 @@ button{
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
+    color: black;
 }
 #text_input{
     width: 500px;
