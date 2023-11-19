@@ -57,7 +57,7 @@ try{
                 if(a!=0){
                     search_t+="[\\s]{1,}";
                 }
-                search_t+=s1+"[A-Za-z]*"+s2;
+                search_t+=s1+"[A-Za-z]{0,}"+s2;
             }
             search_t=add_space(search_t);
             res=re_search(text_input,search_t)
@@ -71,13 +71,19 @@ function re_search(w_inp,s_inp){
     var w_arr=w_inp.split('\n');
     var w_arr_l=w_arr.length;
     var outp=[]
+    var found=0;
     for(var a=0;a<w_arr_l;a++){
         var matches=w_arr[a].match(pattern);
         if(matches){
+            found=1;
             for(var b=0;b<matches.length;b++){
                 outp.push({"word":matches[b],"nearby_rows":[w_arr[a],w_arr[a+1]]});
             }
         }
+    }
+    if(!found){
+        alert("Text can't be find!");
+        return;
     }
     res_dump(outp);
     location.href="#s_res_text"
