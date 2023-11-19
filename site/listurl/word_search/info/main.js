@@ -107,7 +107,7 @@ function res_dump(inparr){
     $("#s_res_text").html(out);
 }
 function add_space(inp){
-    return("(?<=[\\s]{1,})"+inp+"(?=[\\s]*)");
+    return("(?<=^|[^A-Za-z])"+inp+"(?=[^A-Za-z]|$)");
 }
 function s_filt_by_start_end_backup(){
     s_filt_by_start_end_data=[];
