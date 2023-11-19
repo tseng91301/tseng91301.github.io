@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="info/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="d_inp">
+        <h3>Input the document content</h3>
+        <textarea id="text_input">Hello, this is the test word!!!
+            word test 
+        </textarea>
+    </div>
+    <div id="s_filt">
+        <div id="s_filt_by_word">
+            <h3>Input the search word</h3>
+            <input id="s_filt_by_word_inp" type="text">
+            <button id="s_filt_by_word_sb" class="sub">Search</button>
+        </div>
+        <div id="s_filt_by_start_end">
+            <h3>Input the pattern of word</h3>
+            <div id="s_filt_by_start_end_inp">
+                <input id="s_filt_by_start_end_inp_1_1" type="text">___<input id="s_filt_by_start_end_inp_1_2" type="text">
+            </div>
+            <button id="s_filt_by_start_end_add">add word</button>
+            <button id="s_filt_by_start_end_del">delete word</button>
+            <button id="s_filt_by_start_end_sb" class="sub">Search</button>
+        </div>
+        <div id="s_filt_by_re">
+            <h3>Input the search filter by regular expression (Advanced)</h3>
+            <input id="s_filt_by_re_inp">
+            <button id="s_filt_by_re_sb" class="sub">Search</button>
+        </div>
+        
+    </div>
+    <div id="s_res">
+        <h3>Search result: </h3>
+        <pre id="s_res_text"></pre>
+    </div>
+    <script src="info/jquery.min.js"></script>
+    <script src="info/main.js"></script>
+    
+</body>
+</html>
