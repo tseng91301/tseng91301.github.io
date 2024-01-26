@@ -1,0 +1,17 @@
+{
+    "to_top_nid": 0,
+    "notify_data":[
+        {
+            "title":"Test",
+            "detail":"This is the test message",
+            "from":"Administrator",
+            "date":"2024-01-26 09:44:32"
+        },
+        {
+            "title":"Test2",
+            "detail":"Taiwan Number 1 !!!",
+            "from":"Anonymous",
+            "date":"2024-01-26 09:45:37"
+        }
+    ]
+}

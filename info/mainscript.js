@@ -1,14 +1,22 @@
 var information;
+var notification;
 $(document).ready(function(){
     get_json_file("info/information.json")
         .then(data => {
-            information = data
+            information = data;
             set_body_content()
                 .then(function(){
                     $(".card").click(function(){
-                        magnify(this)
+                        magnify(this);
+                        specified_motion(this);
                     })
                 })
+        })
+    get_json_file("info/notify.json")
+        .then(data => {
+            notification = data;
+            console.log(data)
+
         })
 })
 
@@ -22,18 +30,6 @@ function magnify(attr){
         $(attr).find("#detail").css("display", "block");
     }
 }
-
-$(document).ready(function(){
-    $(".card").click(function(){
-        console.log(this)
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $('.box').removeClass('active'); // 移除所有元素的 active 类
-            $(this).addClass('active'); // 将点击的元素添加 active 类
-        }
-    })
-})
 
 async function get_json_file(f_name){
     var data_out
@@ -54,7 +50,7 @@ async function set_body_content(){
     var num = information.length
     var body_v = ""
     for(var a=0; a<num; a++){
-        body_v += '<div class="card">';
+        body_v += '<div class="card" id="' + information[a]['id'] + '">';
         body_v += '<h2 id="title">' + information[a]['title'] + '</h2>';
         body_v += '<p id="brief">' + information[a]['brief'] + '</p>';
         body_v += '<p id="detail" style="display: none;">' + information[a]['detail'] + '</p>';

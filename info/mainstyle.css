@@ -2,20 +2,18 @@
     display: none;
 }
 body{
-    background-color: #000000ad;
+    position: relative;
+    background-color: #000000;
 }
 #header{
     width: 100%;
-    height: 30vh;
-    background-color: #001ec840;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
+    text-align: center;
 }
 #header span{
     font-size: 33px;
@@ -25,9 +23,40 @@ body{
     font-family: cursive;
     color: #ef74ff;
 }
+#fast_access{
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+#fast_access input{
+    width: 30vh;
+    height: 10px;
+    padding: 1vh;
+    border-radius: 9px;
+    background-color: #c3c3c3;
+}
+#fast_access button{
+    width: 122px;
+    height: 31px;
+    padding: 1vh;
+    border-radius: 9px;
+    background-color: #4793ff;
+}
+#notify_bar{
+    min-height: 224px;
+    background-color: #565656;
+    padding: 15px;
+    border-radius: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #b9ff56;
+    overflow: auto;
+}
 #main_content{
-    position: absolute;
-    top: 30vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,7 +65,7 @@ body{
 .card{
     width: 41vh;
     height: 30vh;
-    background-color: #000000fc;
+    background-color: #3e3e3e;
     border-radius: 10px;
     padding: 2vh;
     border-style: groove;
