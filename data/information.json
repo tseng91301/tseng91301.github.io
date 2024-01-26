@@ -1,15 +1,18 @@
 [
     {
+        "id": "personal",
         "title": "personal",
         "brief":"I'm an NTU student, and I really like coding!",
         "detail":"This is the detail"
     },
     {
+        "id": "academy",
         "title": "Academy",
         "brief": "University",
         "detail": "I'm from National Taiwan University"
     },
     {
+        "id": "interest",
         "title": "Interest",
         "brief": "Coding, like C++, Python, Javascript, etc...",
         "detail": "I learn C++ for many years"
