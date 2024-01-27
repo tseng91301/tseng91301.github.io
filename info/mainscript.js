@@ -35,7 +35,7 @@ function step2(){
             set_notification_html()
                 .then(data => {
                     console.log(data);
-                    $("#notify_bar").html(body_v);
+                    $("#notify_bar").html(data);
                 })
                 .catch(error => {
                     console.error("Error: "+error)
@@ -83,6 +83,7 @@ async function set_body_content(){
         body_v += '<p id="detail" style="display: none;">' + information[a]['detail'] + '</p>';
         body_v += '</div>';
     }
+    $("#main_content").html(body_v)
     
 }
 
