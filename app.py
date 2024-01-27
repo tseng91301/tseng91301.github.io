@@ -21,7 +21,7 @@ def hello():
 def ip():
     if request.method=='GET':
         outp_ip = os.getenv('REMOTE_SERVER_IP')
-        response = make_response("Remote IP: "+outp_ip)
+        response = make_response("Remote IP: "+str(outp_ip))
         response.status_code = 200
         return response
     if request.method=='POST':
@@ -63,4 +63,4 @@ def check_exist(data:list,inp:list):
     return bool(find)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0:80')
