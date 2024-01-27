@@ -34,7 +34,7 @@ function magnify(attr){
 async function get_json_file(f_name){
     var data_out
     try{
-        const response = await fetch(f_name);
+        const response = await fetch("http://192.168.0.7:8000/"+f_name);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
