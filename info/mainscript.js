@@ -90,5 +90,6 @@ async function set_notification_html(){
         body_v += '" id="notify-'+a+'" >';
         body_v += '<h2 id="title">'+notification['notify_data'][a]['title']+'</h2>';
         body_v += '<p id="content">'+notification['notify_data'][a]['brief']+'</p>';
+        body_v += '<p id="from">From: '+notification['notify_data'][a]['from']+'</p>';
     }
 }
