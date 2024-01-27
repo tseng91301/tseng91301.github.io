@@ -32,12 +32,19 @@ function step2(){
     get_json_file("http://"+ip_addr+"/?data=notify")
         .then(data => {
             notification = data;
-            console.log(data)
-
+            set_notification_html()
+                .then(data => {
+                    console.log(data);
+                    $("#notify_bar").html(body_v);
+                })
+                .catch(error => {
+                    console.error("Error: "+error)
+                })
         })
         .catch(error => {
             console.error("Error: "+error)
         })
+    
 }
 
 function magnify(attr){
@@ -76,7 +83,7 @@ async function set_body_content(){
         body_v += '<p id="detail" style="display: none;">' + information[a]['detail'] + '</p>';
         body_v += '</div>';
     }
-    $("#main_content").html(body_v)
+    
 }
 
 async function set_notification_html(){
@@ -91,5 +98,9 @@ async function set_notification_html(){
         body_v += '<h2 id="title">'+notification['notify_data'][a]['title']+'</h2>';
         body_v += '<p id="content">'+notification['notify_data'][a]['brief']+'</p>';
         body_v += '<p id="from">From: '+notification['notify_data'][a]['from']+'</p>';
+        body_v += '<p id="date">Date: '+notification['notify_data'][a]['date']+'</p>';
+        body_v += '</div>';
     }
+    
+    return body_v;
 }
