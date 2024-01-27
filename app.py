@@ -21,7 +21,9 @@ def hello():
 def ip():
     if request.method=='GET':
         outp_ip = os.getenv('REMOTE_SERVER_IP')
-        response = make_response("Remote IP: "+str(outp_ip))
+        outp = {"ip": str(outp_ip)}
+        outp_str = json.dumps(outp)
+        response = make_response(outp_str)
         response.status_code = 200
         return response
     if request.method=='POST':
