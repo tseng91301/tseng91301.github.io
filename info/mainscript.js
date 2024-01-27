@@ -4,6 +4,7 @@ var ip_addr
 $(document).ready(function(){
     get_json_file("https://remote-ip-check.onrender.com/ip")
         .then(data => {
+            console.log("Remote IP: "+data["ip"])
             //ip_addr = data["ip"];
             ip_addr = "192.168.0.7";
             step2();
@@ -14,7 +15,7 @@ $(document).ready(function(){
 })
 
 function step2(){
-    get_json_file("http://"+ip_addr+"/info/information.json")
+    get_json_file("http://"+ip_addr+"/?data=information")
         .then(data => {
             information = data;
             set_body_content()
@@ -28,7 +29,7 @@ function step2(){
         .catch(error => {
             console.error("Error: "+error)
         })
-    get_json_file("http://"+ip_addr+"/info/notify.json")
+    get_json_file("http://"+ip_addr+"/?data=notify")
         .then(data => {
             notification = data;
             console.log(data)
@@ -76,4 +77,18 @@ async function set_body_content(){
         body_v += '</div>';
     }
     $("#main_content").html(body_v)
+}
+
+async function set_notification_html(){
+    var body_v = "";
+    var num = notification['notify_data'].length;
+    for(var a=0;a<num;a++){
+        body_v += '<div class="notify';
+        if(notification['to_top_nid']==a){
+            body_v += ' notify-top';
+        }
+        body_v += '" id="notify-'+a+'" >';
+        body_v += '<h2 id="title">'+notification['notify_data'][a]['title']+'</h2>';
+        body_v += '<p id="content">'+notification['notify_data'][a]['brief']+'</p>';
+    }
 }

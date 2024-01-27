@@ -1,0 +1,4 @@
+@font-face {
+    font-family: 'yozai-bold';
+    src: url('/module/font/Yozai-Bold.ttf') format('truetype'); /* 替换成实际的字体文件路径 */
+}
