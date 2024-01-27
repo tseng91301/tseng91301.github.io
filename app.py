@@ -1,6 +1,7 @@
 from flask import Flask, abort
 from flask import render_template,make_response
 from flask import request
+from flask_cors import CORS
 
 import requests
 from io import BytesIO
@@ -12,6 +13,7 @@ import os
 #from module import pdfgen
 
 app = Flask(__name__)
+CORS(app)  # 允许所有域的跨域请求
 
 @app.route('/')
 def hello():
