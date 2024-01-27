@@ -1,7 +1,7 @@
 var information;
 var notification;
 $(document).ready(function(){
-    get_json_file("info/information.json")
+    get_json_file("http://192.168.0.7:8000/info/information.json")
         .then(data => {
             information = data;
             set_body_content()
@@ -12,11 +12,24 @@ $(document).ready(function(){
                     })
                 })
         })
-    get_json_file("info/notify.json")
+        .catch(error => {
+            console.error("Error: "+error)
+        })
+    get_json_file("http://192.168.0.7:8000/info/notify.json")
         .then(data => {
             notification = data;
             console.log(data)
 
+        })
+        .catch(error => {
+            console.error("Error: "+error)
+        })
+    get_json_file("https://remote-ip-check.onrender.com/ip")
+        .then(data => {
+            console.log(data)
+        })
+        .catch(error => {
+            console.error("Error: "+error)
         })
 })
 
@@ -31,10 +44,10 @@ function magnify(attr){
     }
 }
 
-async function get_json_file(f_name){
+async function get_json_file(url){
     var data_out
     try{
-        const response = await fetch("http://192.168.0.7:8000/"+f_name);
+        const response = await fetch(url);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
