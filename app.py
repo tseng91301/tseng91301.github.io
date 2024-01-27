@@ -25,11 +25,16 @@ def ip():
         response.status_code = 200
         return response
     if request.method=='POST':
-        ip = request.remote_addr
-        os.environ['REMOTE_SERVER_IP'] = ip
+        data = request.json
+        if(data is None):
+            response = make_response("failed")
+            response.status_code = 200
+            return response
+        os.environ['REMOTE_SERVER_IP'] = data.get('ip')
         response = make_response("success")
         response.status_code = 200
         return response
+    
 
 def rmv(inp,ele):
     tmpa=[]
