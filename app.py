@@ -63,4 +63,4 @@ def check_exist(data:list,inp:list):
     return bool(find)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
