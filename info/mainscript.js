@@ -1,7 +1,20 @@
 var information;
 var notification;
+var ip_addr
 $(document).ready(function(){
-    get_json_file("http://192.168.0.7:8000/info/information.json")
+    get_json_file("https://remote-ip-check.onrender.com/ip")
+        .then(data => {
+            //ip_addr = data["ip"];
+            ip_addr = "192.168.0.7";
+            step2();
+        })
+        .catch(error => {
+            console.error("Error: "+error);
+        })
+})
+
+function step2(){
+    get_json_file("http://"+ip_addr+"/info/information.json")
         .then(data => {
             information = data;
             set_body_content()
@@ -15,7 +28,7 @@ $(document).ready(function(){
         .catch(error => {
             console.error("Error: "+error)
         })
-    get_json_file("http://192.168.0.7:8000/info/notify.json")
+    get_json_file("http://"+ip_addr+"/info/notify.json")
         .then(data => {
             notification = data;
             console.log(data)
@@ -24,14 +37,7 @@ $(document).ready(function(){
         .catch(error => {
             console.error("Error: "+error)
         })
-    get_json_file("https://remote-ip-check.onrender.com/ip")
-        .then(data => {
-            console.log(data)
-        })
-        .catch(error => {
-            console.error("Error: "+error)
-        })
-})
+}
 
 function magnify(attr){
     if ($(attr).hasClass('active')) {
