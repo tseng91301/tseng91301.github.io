@@ -5,8 +5,8 @@ $(document).ready(function(){
     get_json_file("https://remote-ip-check.onrender.com/ip")
         .then(data => {
             console.log("Remote IP: "+data["ip"])
-            //ip_addr = data["ip"];
-            ip_addr = "192.168.0.7";
+            ip_addr = data["ip"];
+            //ip_addr = "192.168.0.7";
             step2();
         })
         .catch(error => {
