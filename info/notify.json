@@ -6,14 +6,16 @@
             "brief":"This is the test message",
             "detail":"This is the test message",
             "from":"Administrator",
-            "date":"2024-01-26 09:44:32"
+            "date":"2024-01-26 09:44:32",
+            "pass":"12345678"
         },
         {
             "title":"Test2",
             "brief":"Taiwan Number 1 !!!",
             "detail":"Taiwan Number 1 !!!",
             "from":"Anonymous",
-            "date":"2024-01-26 09:45:37"
+            "date":"2024-01-26 09:45:37",
+            "pass":"88888888"
         }
     ]
 }

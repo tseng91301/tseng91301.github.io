@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/module/editormd/css/editormd.css" />
     <link rel="stylesheet" href="info/style.css">
+    <link rel="stylesheet" href="/info/notify.css">
+    <link rel="stylesheet" href="/module/global-style.css">
     <title>撰寫橫幅</title>
 </head>
 <body>
     <div id="basic_inf">
         <h2>橫幅基本資料</h2>
         <input id="title" type="text" placeholder="要呈現的橫幅標題">
-        <input id="brief" type="text" placeholder="要呈現的通知的簡要資訊">
+        <input id="brief" type="text" placeholder="要呈現的橫幅簡要資訊">
         <input id="from" type="text" placeholder="要呈現的橫幅撰寫使用者名稱(可不填)">
     </div>
     <div id="information-edit">
@@ -22,6 +24,14 @@
 橫幅內容...
             </textarea>
         </div>
+    </div>
+    <div class="align-right">
+        <p>Powered by <a href="https://pandao.github.io/editor.md/en.html" style="display: flex;align-items: center;"><img src="info/editormd-logo-24x24.png">Editor.md</a></p>
+        <a style="color: #b18b00;" href="https://www.cloudflare.com/zh-tw/learning/security/threats/cross-site-scripting/" target="_blank">Javascript is not allowed, why?</a>
+    </div>
+    <div id="bage-preview">
+        <h2>橫幅預覽</h2>
+        <div class="notify" id="preview"></div>
     </div>
     <script src="/module/jquery.min.js"></script>
     <script src="/module/editormd/editormd.min.js"></script>
@@ -35,6 +45,8 @@
             });
         });
     </script>
+    <br/>
+    <button id="bage_preview-button">預覽</button>
     <button id="bage_commit">提交</button>
     <script src="info/script.js"></script>
 </body>
