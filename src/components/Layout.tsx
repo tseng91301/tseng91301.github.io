@@ -15,7 +15,8 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
       <footer className="py-6 text-center text-sm text-gray-500 bg-white border-t">
         <div className="container mx-auto">
-          © {new Date().getFullYear()} My Site | All Rights Reserved
+          © {new Date().getFullYear()} K's Site | All Rights Reserved <br/>
+          本網站由 lovable.ai 協助製作，目前有些頁面尚未完全開發，敬請見諒~
         </div>
       </footer>
     </div>
