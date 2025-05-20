@@ -24,7 +24,7 @@ const ProjectsPage = () => {
       description: '使用 php, mySQL 技術製作原創空間的預約系統，能夠依據使用者的權限層級來客製化能夠預約的機台或設備，同時管理員也能夠更加方便的管理每個人的預約紀錄，省去紙本或普通表單在資料整理上的麻煩',
       link: 'https://ntu-bime-linebot.onrender.com/reservation/maker_space/index.php',
       githubLink: 'https://github.com/tseng91301/BIME-Department-Association-site/tree/master/local_server/reservation/maker_space',
-      image: 'https://github.com/tseng91301/tseng91301.github.io/blob/v3-react/src/assets/reservation_system_page.png?raw=true',
+      image: 'https://raw.githubusercontent.com/tseng91301/tseng91301.github.io/refs/heads/v3-react/src/assets/reservation_system_page.png',
       tags: ['PHP', 'mySQL', 'HTML', 'CSS', 'JavaScript']
     },
     {
