@@ -19,50 +19,23 @@ const ProjectsPage = () => {
   // Placeholder projects data - replace with your actual projects
   const projects: Project[] = [
     {
-      id: 1,
-      title: '個人作品集網站',
-      description: '使用React和TypeScript打造的個人網站，展示我的作品和經歷。採用Tailwind CSS進行樣式設計和響應式佈局。',
-      link: 'https://example.com/portfolio',
-      githubLink: 'https://github.com/username/portfolio',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97',
-      tags: ['React', 'TypeScript', 'Tailwind CSS']
-    },
-    {
       id: 2,
-      title: '電子商務平台',
-      description: '基於React開發的全功能電子商務網站，包括產品瀏覽、購物車功能、結帳流程和用戶帳戶管理。',
-      link: 'https://example.com/ecommerce',
-      githubLink: 'https://github.com/username/ecommerce',
-      image: 'https://images.unsplash.com/photo-1555421689-491a97ff2040',
-      tags: ['React', 'Node.js', 'MongoDB', 'Redux']
+      title: '系上原創空間預約管理系統',
+      description: '使用 php, mySQL 技術製作原創空間的預約系統，能夠依據使用者的權限層級來客製化能夠預約的機台或設備，同時管理員也能夠更加方便的管理每個人的預約紀錄，省去紙本或普通表單在資料整理上的麻煩',
+      link: 'https://ntu-bime-linebot.onrender.com/reservation/maker_space/index.php',
+      githubLink: 'https://github.com/tseng91301/BIME-Department-Association-site/tree/master/local_server/reservation/maker_space',
+      image: 'https://raw.githubusercontent.com/tseng91301/tseng91301.github.io/refs/heads/v3-react/src/assets/reservation_system_page.jpg',
+      tags: ['PHP', 'mySQL', 'HTML', 'CSS', 'JavaScript']
     },
     {
       id: 3,
-      title: '任務管理應用',
-      description: '一款簡潔而功能強大的任務管理工具，支持任務創建、編輯、分類和優先級設置。具有直觀的用戶界面和拖放功能。',
-      link: 'https://example.com/taskapp',
-      githubLink: 'https://github.com/username/taskapp',
-      image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b',
-      tags: ['React', 'Firebase', 'MUI']
+      title: '系學會網站',
+      description: '一個用來傳達系學會訊息和陳列系學會資源的網站，裡面就包含了原創空間預約系統，另外還有系產下載等實用工具',
+      link: 'https://ntu-bime-linebot.onrender.com/index.html',
+      githubLink: 'https://github.com/tseng91301/BIME-Department-Association-site',
+      image: 'https://images.unsplash.com/photo-1649442279006-8bccb4cc63e1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      tags: ['PHP', 'mySQL', 'HTML', 'CSS', 'JavaScript', 'python', 'Flask']
     },
-    {
-      id: 4,
-      title: '天氣預報應用',
-      description: '使用現代前端技術和天氣API創建的實用天氣預報應用，提供當前天氣狀況和未來7天預報。',
-      link: 'https://example.com/weather',
-      githubLink: 'https://github.com/username/weather',
-      image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b',
-      tags: ['JavaScript', 'API Integration', 'CSS3']
-    },
-    {
-      id: 5,
-      title: '社交媒體儀表板',
-      description: '為社交媒體管理者設計的分析儀表板，整合多個平台的數據，提供統計圖表和見解報告。',
-      link: 'https://example.com/dashboard',
-      githubLink: 'https://github.com/username/dashboard',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
-      tags: ['React', 'Chart.js', 'REST API']
-    }
   ];
 
   return (
@@ -142,6 +115,7 @@ const ProjectsPage = () => {
               </motion.div>
             ))}
           </div>
+          <p className="text-gray-600 text-center mt-8 mb-8">更多作品可以到我的<a href="https://github.com/tseng91301/" target="_blank" className="text-primary hover:underline">GitHub</a>查看</p>
         </div>
       </motion.div>
     </Layout>
