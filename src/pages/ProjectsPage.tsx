@@ -19,7 +19,7 @@ const ProjectsPage = () => {
   // Placeholder projects data - replace with your actual projects
   const projects: Project[] = [
     {
-      id: 2,
+      id: 0,
       title: '系上原創空間預約管理系統',
       description: '使用 php, mySQL 技術製作原創空間的預約系統，能夠依據使用者的權限層級來客製化能夠預約的機台或設備，同時管理員也能夠更加方便的管理每個人的預約紀錄，省去紙本或普通表單在資料整理上的麻煩',
       link: 'https://ntu-bime-linebot.onrender.com/reservation/maker_space/index.php',
@@ -28,13 +28,22 @@ const ProjectsPage = () => {
       tags: ['PHP', 'mySQL', 'HTML', 'CSS', 'JavaScript']
     },
     {
-      id: 3,
+      id: 1,
       title: '系學會網站',
       description: '一個用來傳達系學會訊息和陳列系學會資源的網站，裡面就包含了原創空間預約系統，另外還有系產下載等實用工具',
       link: 'https://ntu-bime-linebot.onrender.com/index.html',
       githubLink: 'https://github.com/tseng91301/BIME-Department-Association-site',
       image: 'https://images.unsplash.com/photo-1649442279006-8bccb4cc63e1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       tags: ['PHP', 'mySQL', 'HTML', 'CSS', 'JavaScript', 'python', 'Flask']
+    },
+    {
+      id: 2,
+      title: 'Robot Core by Cellphone',
+      description: '將手機變成機器人處理器(大腦)的專案',
+      link: 'https://github.com/tseng91301/robot-core-adv',
+      githubLink: 'https://github.com/tseng91301/robot-core-adv',
+      image: 'https://raw.githubusercontent.com/tseng91301/tseng91301.github.io/refs/heads/v3-react/src/assets/phone-robot.png',
+      tags: ['react-native', 'Tensorflow', 'Yolov11', 'Kotlin', 'Android']
     },
   ];
 

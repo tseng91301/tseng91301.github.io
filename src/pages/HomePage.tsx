@@ -7,6 +7,7 @@ import profile from '@/assets/profile.jpg';
 import { title } from 'process';
 import { School } from 'lucide-react';
 import { Description } from '@radix-ui/react-dialog';
+import { textStyles } from '@/lib/styles';
 
 const HomePage = () => {
   // Placeholder data - replace with your actual information
@@ -74,6 +75,14 @@ const HomePage = () => {
           <div className="mb-12">
             <h2 className="text-xl font-semibold text-gray-800 border-b border-gray-200 pb-2 mb-4">個人簡介</h2>
             <p className="text-gray-600 leading-relaxed">{personalInfo.bio}</p>
+          </div>
+
+          {/* Current Project */}
+          <div className="mb-12">
+            <h2 className="text-xl font-semibold text-gray-800 border-b border-gray-200 pb-2 mb-4">最近做的事情</h2>
+            <p className='text-gray-600 leading-relaxed' style={textStyles.title}>React Native Android 機器人大腦</p>
+            <p className='text-gray-600 leading-relaxed mt-2' style={{fontSize: '15px'}}>&emsp;&emsp;手機，是每個人手上都有的一台超級電腦：機器人，卻是我們遙不可及的夢想。我想要藉由這個專案，讓我們不須擔心那昂貴的機器人主板，放上手機，一切盡在掌控之中！</p>
+            <p className='text-gray-600 leading-relaxed mt-2' style={{fontSize: '15px'}}>詳情請見我的 <a href='https://github.com/tseng91301/robot-core-adv' style={textStyles.link}>Github 專案</a></p>
           </div>
 
           {/* Education */}
