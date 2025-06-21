@@ -35,12 +35,12 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <div className="relative h-80 md:h-110 overflow-hidden">
+      <div className="relative h-80 md:h-80 overflow-hidden">
         {/* Banner background */}
-        <div className="absolute inset-0 h-64 md:h-94 bg-gradient-to-r from-blue-500 to-indigo-600"></div>
+        <div className="absolute inset-0 h-64 md:h-64 bg-gradient-to-r from-blue-500 to-indigo-600"></div>
         
         {/* Profile picture */}
-        <div className="container mx-auto px-4 h-64 md:h-90 flex flex-col justify-end items-center relative">
+        <div className="container mx-auto px-4 h-64 md:h-64 flex flex-col justify-end items-center relative">
           <motion.div 
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}

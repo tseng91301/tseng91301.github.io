@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, Home, Gamepad, Code, Settings } from 'lucide-react';
+import { Menu, Home, Gamepad, Code, Settings, ContactRound } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -13,7 +13,8 @@ const Header = () => {
     { path: '/', name: '首頁', icon: <Home className="h-4 w-4 mr-2" /> },
     { path: '/tools', name: '小工具', icon: <Settings className="h-4 w-4 mr-2" /> },
     { path: '/games', name: '小遊戲', icon: <Gamepad className="h-4 w-4 mr-2" /> },
-    { path: '/projects', name: '我的專案', icon: <Code className="h-4 w-4 mr-2" /> }
+    { path: '/projects', name: '我的專案', icon: <Code className="h-4 w-4 mr-2" /> },
+    { path: '/contact', name: '聯絡我', icon: <ContactRound className="h-4 w-4 mr-2" /> }
   ];
 
   return (
