@@ -53,7 +53,7 @@ const ContactPage = () => {
       id: 4,
       title: '需要約個時間碰面?',
       description: "點擊下面連結，填寫預約表單即可",
-      link: '/contact/reservation',
+      link: '/#/contact/reservation',
       link_text: '點擊此處打開連結',
       icon: <CalendarCheck />
     }
