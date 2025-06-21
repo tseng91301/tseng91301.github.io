@@ -9,13 +9,15 @@ import ToolsPage from "./pages/ToolsPage";
 import GamesPage from "./pages/GamesPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import NotFound from "./pages/NotFound";
+import ContactPage from "./pages/ContactPage";
+import ContactReservationForm from "./pages/ContactReservationForm";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
+      {/* <Toaster /> */}
       <Sonner />
       <BrowserRouter>
         <Routes>
@@ -23,6 +25,8 @@ const App = () => (
           <Route path="/tools" element={<ToolsPage />} />
           <Route path="/games" element={<GamesPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/contact/reservation" element={<ContactReservationForm />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
