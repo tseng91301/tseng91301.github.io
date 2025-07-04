@@ -16,6 +16,11 @@ const predefinedStrings: MemeWithImg[] = [
     meme_text: "114514",
     img_link: "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2025/05/14/0/32040163.png&x=0&y=0&sw=0&sh=0&exp=3600&sl=W&&fw=800",
     img_uri: "https://zh.wikipedia.org/zh-tw/114514",
+  },
+  {
+    meme_text: "51121511121",
+    img_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvwL7SOdMDeaSOS_wKM26UoTEoC4esQKMa7w&s",
+    img_uri: "https://www.bilibili.com/video/BV14M4y1h7jd/",
   }
 ];
 
