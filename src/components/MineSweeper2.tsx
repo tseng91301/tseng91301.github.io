@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Interface } from "readline";
 
 const GRID_SIZE = 10;
 const CELL_SIZE = 40;
@@ -26,6 +25,41 @@ const predefinedStrings: MemeWithImg[] = [
     meme_text: "菜菜撈撈",
     img_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0LbbWmCrhyhvg3LHMPKRJLm50NnzaGIUs0A&s",
     img_uri: "https://www.tiktok.com/@samsunga35a34/video/7500154402062355767",
+  },
+  {
+    meme_text: "回答我！",
+    img_link: "https://cdn.hk01.com/di/media/images/dw/20250418/989916224576032768489561.jpeg/e9bafRaNnUjnFMxIvPQYlrINBsmyfx7aNu4ZkTbuGZE?v=w1920",
+    img_uri: "https://www.youtube.com/watch?v=iCzse-Wutmg",
+  },
+  {
+    meme_text: "啊能能能~~",
+    img_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBPnUPEaAtZqwrdkxv_wubVxTHdvm2cnpu_w&s",
+    img_uri: "https://www.instagram.com/reel/DIMGPmYPVaB/",
+  },
+  {
+    meme_text: "我爸得了MVP",
+    img_link: "https://lh5.googleusercontent.com/proxy/jwtJVgQCee-ueH2yj7wBT4MmWLKOE-tEd7LRzD0fwztAzzzGm2J8QmFGmKh_OPaLUiQTSqh-5R2cpHgYuzgkpLwcAkFFhd2SqiA-jUpcGZjzFrf8k1aipDuPUloRJYM",
+    img_uri: "https://www.youtube.com/watch?v=FuASNiDdAPE",
+  },
+  {
+    meme_text: "那一天的憂鬱憂鬱起來",
+    img_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ80j6klnKCa6qx6X2SLfI5lKxgU2WsvS4mQ&s",
+    img_uri: "https://www.youtube.com/watch?v=tAWl9oiFmx8&list=RDtAWl9oiFmx8&start_radio=1",
+  },
+  {
+    meme_text: "喔痛苦！",
+    img_link: "https://i.ytimg.com/vi/8Z7NRa0tTF0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgUShAMA8=&rs=AOn4CLAjBcYS7swTBD2SWNt_rmS3L__bZg",
+    img_uri: "https://www.youtube.com/watch?v=PdxPmAZFoHI",
+  },
+  {
+    meme_text: "tralalerotralala",
+    img_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRshTrJdrHjphqiEQUQa4tO5GBCCwPYYHkkUA&s",
+    img_uri: "https://www.youtube.com/shorts/CFZe0aCKHbk",
+  },
+  {
+    meme_text: "sahur",
+    img_link: "https://i1.sndcdn.com/artworks-YDQOy2Pru5CA2rhs-x1uzgA-t500x500.jpg",
+    img_uri: "https://www.youtube.com/shorts/nYx-2PbomEY",
   }
 ];
 
