@@ -21,6 +21,11 @@ const predefinedStrings: MemeWithImg[] = [
     meme_text: "51121511121",
     img_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvwL7SOdMDeaSOS_wKM26UoTEoC4esQKMa7w&s",
     img_uri: "https://www.bilibili.com/video/BV14M4y1h7jd/",
+  },
+  {
+    meme_text: "菜菜撈撈",
+    img_link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0LbbWmCrhyhvg3LHMPKRJLm50NnzaGIUs0A&s",
+    img_uri: "https://www.tiktok.com/@samsunga35a34/video/7500154402062355767",
   }
 ];
 
