@@ -23,8 +23,7 @@ const ContactReservationForm = () => {
     console.log(JSON.stringify(formData));
 
     try {
-      // 'https://my-line-api.onrender.com/time_reservation http://192.168.196.49:5000/time_reservation'
-      const response = await fetch('https://my-line-api.onrender.com/time_reservation', {
+      const response = await fetch(import.meta.env.VITE_API_URL + '/time_reservation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
