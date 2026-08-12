@@ -36,8 +36,8 @@ const ContactPage = () => {
     {
       id: 2,
       title: 'Instagram',
-      description: "Instagram 帳號: t.c.k_319",
-      link: 'https://www.instagram.com/t.c.k_319/',
+      description: "Instagram 帳號: ckk_l5e1g2",
+      link: 'https://www.instagram.com/ckk_l5e1g2/',
       link_text: '點擊此處打開連結',
       icon: <Instagram />
     },
